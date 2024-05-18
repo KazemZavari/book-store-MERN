@@ -31,8 +31,10 @@ router.get("/", async (req, res) => {
     return res.status(200).json({
       count: books.length,
       data: books,
+      
     });
     // return res.send(`first book name is ${books[0].title}`)
+
   } catch (error) {
     console.log(error.message);
     res.status(500).send({ message: error.message });
