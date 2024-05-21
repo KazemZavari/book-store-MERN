@@ -8,7 +8,6 @@ const app = express();
 // Middleware for parsing request body
 app.use(express.json());
 
-
 // middleware for handling CORS POLICY
 //option 1: Allow All origins whit default of cors(*)
 // app.use(cors());
@@ -23,6 +22,7 @@ app.use(
 );
 
 app.use("/books", booksRoute);
+
 app.get("/", (req, res) => {
   console.log(req);
   return res.status(234).send("Welcome to MERN Stack");
