@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
+import { useContext } from 'react';
+import { mainContext } from '../../contextProvider/MainContext';
 
-const BooksTable = ({books}) => {
+const BooksTable = () => {
+  const {books} =useContext(mainContext)
   return (
     <table className='w-full border-separate border-spacing-2'>
     <thead>
