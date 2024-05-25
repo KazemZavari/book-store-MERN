@@ -8,6 +8,7 @@ const MainContextProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
   const [showType, setShowType] = useState("table");
 
+  // Get books list from backend and store to books state
   useEffect(() => {
     setLoading(true);
     axios
