@@ -1,6 +1,7 @@
  
 import mongoose from "mongoose";
 
+//create schima for book whit mongoose
 const bookSchema = mongoose.Schema(
   {
     title: {
